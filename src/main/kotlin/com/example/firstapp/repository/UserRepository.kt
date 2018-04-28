@@ -8,28 +8,33 @@ import java.util.concurrent.atomic.AtomicInteger
 import javax.annotation.Resource
 
 @Repository
-public class UserRepository {
+class UserRepository {
 
-    private val repository = ConcurrentHashMap<Int,Any>() ;
+    private val repository = ConcurrentHashMap<Int,User>()
 
-    val idGenerator = AtomicInteger();
+    val idGenerator = AtomicInteger()
 
     /**
      * 保存用户对象
      */
     fun save(user: User):Boolean {
-        var success = false;
+        var success = false
         /** 从1 开始*/
 
-        var id = idGenerator.incrementAndGet();
-        user.id = id;
-        repository.put(id,user);
-        return true;
+        var id = idGenerator.incrementAndGet()
+        user.id = id
+        repository.put(id,user)
+        return true
     }
 
     fun get(id: Int):User? {
-        val any = repository.get(id);
+        val any = repository.get(id)
         return any as User?
+    }
+
+    fun findAll(): List<User> {
+        val elements = repository.elements()
+        return elements.toList()
     }
 
 }

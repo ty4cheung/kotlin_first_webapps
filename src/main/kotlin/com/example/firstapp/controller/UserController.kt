@@ -35,6 +35,6 @@ class UserController {
 
     @GetMapping("/")
     fun index():String{
-        return "/index"
+        return "/login"
     }
 }
