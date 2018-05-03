@@ -2,7 +2,7 @@ package com.example.firstapp.blog.service.impl
 
 import com.example.firstapp.blog.domain.ContentDO
 
-open interface ContentService {
+open interface ContentService  {
 
 	fun get(cid :Long): ContentDO;
 	fun list(map:Map<String,Any>):List<ContentDO>

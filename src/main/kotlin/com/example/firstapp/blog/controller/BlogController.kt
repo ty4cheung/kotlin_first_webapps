@@ -9,17 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.beans.factory.annotation.Autowired
-import sun.security.x509.OIDMap.addAttribute
-import com.example.firstapp.blog.domain.ContentDO
 import com.example.firstapp.common.utils.DateUtils
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.PathVariable
-
-
-
-
-
-
 
 @RequestMapping("/blog")
 @Controller
@@ -40,8 +32,6 @@ class BlogController {
         val total = bContentService?.count(query)
         return PageUtils(bContentList, total!!)
     }
-
-
 
     @GetMapping("/open/post/{cid}")
     fun post(@PathVariable("cid") cid: Long, model: Model): String {
