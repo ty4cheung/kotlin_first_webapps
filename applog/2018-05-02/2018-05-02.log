@@ -1,0 +1,50 @@
+2018-05-02 22:12:57 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6964 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-02 22:12:57 -The following profiles are active: dev
+2018-05-02 22:12:58 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@484970b0: startup date [Wed May 02 22:12:58 CST 2018]; root of context hierarchy
+2018-05-02 22:13:01 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-05-02 22:13:01 -Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.example.firstapp.blog.controller.BlogController.blog()
+2018-05-02 22:13:01 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.example.firstapp.common.utils.PageUtils com.example.firstapp.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, ?>)
+2018-05-02 22:13:01 -Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.firstapp.controller.UserController.index()
+2018-05-02 22:13:01 -Mapped "{[/create],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.saveUser(java.lang.String)
+2018-05-02 22:13:01 -Mapped "{[/get],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.getUser(int)
+2018-05-02 22:13:01 -Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.example.firstapp.system.config.LoginController.welcome()
+2018-05-02 22:13:01 -Mapped (GET && /person/find/all) -> com.example.firstapp.config.RouterFunctionConfiguration$personFindAll$1@1698d7c0
+2018-05-02 22:13:01 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-02 22:13:01 -Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-02 22:13:02 -Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@484970b0: startup date [Wed May 02 22:12:58 CST 2018]; root of context hierarchy
+2018-05-02 22:13:03 -Registering beans for JMX exposure on startup
+2018-05-02 22:13:03 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-02 22:13:03 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-02 22:13:04 -Started HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-02 22:13:04 -Netty started on port(s): 8080
+2018-05-02 22:13:04 -Started FirstAppApplicationKt in 8.242 seconds (JVM running for 9.414)
+2018-05-02 22:13:18 -Failed to handle request [GET http://localhost:8080/css/bootstrap.min.css.map]: Response status 404
+2018-05-02 22:13:19 -{dataSource-1} inited
+2018-05-02 22:13:52 -Failed to handle request [GET http://localhost:8080/css/bootstrap.min.css.map]: Response status 404
+2018-05-02 22:14:00 -Closing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@484970b0: startup date [Wed May 02 22:12:58 CST 2018]; root of context hierarchy
+2018-05-02 22:14:00 -Unregistering JMX-exposed beans on shutdown
+2018-05-02 22:14:00 -Unregistering JMX-exposed beans
+2018-05-02 22:14:00 -{dataSource-1} closed
+2018-05-02 22:14:00 -Stopped HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-02 22:14:32 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6972 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-02 22:14:32 -The following profiles are active: dev
+2018-05-02 22:14:33 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@4b45dcb8: startup date [Wed May 02 22:14:33 CST 2018]; root of context hierarchy
+2018-05-02 22:14:36 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-05-02 22:14:36 -Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.example.firstapp.blog.controller.BlogController.blog()
+2018-05-02 22:14:36 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.example.firstapp.common.utils.PageUtils com.example.firstapp.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, ?>)
+2018-05-02 22:14:36 -Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.firstapp.controller.UserController.index()
+2018-05-02 22:14:36 -Mapped "{[/create],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.saveUser(java.lang.String)
+2018-05-02 22:14:36 -Mapped "{[/get],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.getUser(int)
+2018-05-02 22:14:36 -Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.example.firstapp.system.config.LoginController.welcome()
+2018-05-02 22:14:36 -Mapped (GET && /person/find/all) -> com.example.firstapp.config.RouterFunctionConfiguration$personFindAll$1@542f6803
+2018-05-02 22:14:37 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-02 22:14:37 -Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-02 22:14:37 -Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@4b45dcb8: startup date [Wed May 02 22:14:33 CST 2018]; root of context hierarchy
+2018-05-02 22:14:38 -Registering beans for JMX exposure on startup
+2018-05-02 22:14:38 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-02 22:14:38 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-05-02 22:14:39 -Started HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-02 22:14:39 -Netty started on port(s): 8080
+2018-05-02 22:14:39 -Started FirstAppApplicationKt in 7.882 seconds (JVM running for 9.271)
+2018-05-02 22:14:48 -Failed to handle request [GET http://localhost:8080/css/bootstrap.min.css.map]: Response status 404
+2018-05-02 22:14:48 -{dataSource-1} inited

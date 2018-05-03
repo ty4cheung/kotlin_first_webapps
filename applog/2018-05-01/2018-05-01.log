@@ -1,0 +1,464 @@
+2018-05-01 13:58:36 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6076 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-01 13:58:36 -The following profiles are active: dev
+2018-05-01 13:58:36 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@291b4bf5: startup date [Tue May 01 13:58:36 CST 2018]; root of context hierarchy
+2018-05-01 13:58:38 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-05-01 13:58:38 -Mapped "{[],methods=[GET]}" onto public java.lang.String com.example.firstapp.blog.controller.BlogController.blog()
+2018-05-01 13:58:38 -Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.firstapp.controller.UserController.index()
+2018-05-01 13:58:38 -Mapped "{[/get],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.getUser(int)
+2018-05-01 13:58:38 -Mapped "{[/create],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.saveUser(java.lang.String)
+2018-05-01 13:58:38 -Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.example.firstapp.system.config.LoginController.welcome()
+2018-05-01 13:58:39 -Mapped (GET && /person/find/all) -> com.example.firstapp.config.RouterFunctionConfiguration$personFindAll$1@62a8fd44
+2018-05-01 13:58:39 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 13:58:39 -Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 13:58:39 -Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@291b4bf5: startup date [Tue May 01 13:58:36 CST 2018]; root of context hierarchy
+2018-05-01 13:58:40 -Registering beans for JMX exposure on startup
+2018-05-01 13:58:40 -Started HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 13:58:40 -Netty started on port(s): 8080
+2018-05-01 13:58:40 -Started FirstAppApplicationKt in 6.157 seconds (JVM running for 7.498)
+2018-05-01 14:02:56 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6091 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-01 14:02:56 -The following profiles are active: dev
+2018-05-01 14:02:56 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@37883b97: startup date [Tue May 01 14:02:56 CST 2018]; root of context hierarchy
+2018-05-01 14:02:57 -Closing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@291b4bf5: startup date [Tue May 01 13:58:36 CST 2018]; root of context hierarchy
+2018-05-01 14:02:57 -Unregistering JMX-exposed beans on shutdown
+2018-05-01 14:02:57 -Stopped HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:03:03 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6096 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-01 14:03:04 -The following profiles are active: dev
+2018-05-01 14:03:04 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6ab778a: startup date [Tue May 01 14:03:04 CST 2018]; root of context hierarchy
+2018-05-01 14:03:06 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-05-01 14:03:06 -Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.example.firstapp.blog.controller.BlogController.blog()
+2018-05-01 14:03:06 -Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.firstapp.controller.UserController.index()
+2018-05-01 14:03:06 -Mapped "{[/get],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.getUser(int)
+2018-05-01 14:03:06 -Mapped "{[/create],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.saveUser(java.lang.String)
+2018-05-01 14:03:06 -Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.example.firstapp.system.config.LoginController.welcome()
+2018-05-01 14:03:07 -Mapped (GET && /person/find/all) -> com.example.firstapp.config.RouterFunctionConfiguration$personFindAll$1@5ffc5491
+2018-05-01 14:03:07 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:03:07 -Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:03:07 -Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6ab778a: startup date [Tue May 01 14:03:04 CST 2018]; root of context hierarchy
+2018-05-01 14:03:08 -Registering beans for JMX exposure on startup
+2018-05-01 14:03:08 -Started HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:03:08 -Netty started on port(s): 8080
+2018-05-01 14:03:08 -Started FirstAppApplicationKt in 5.444 seconds (JVM running for 6.174)
+2018-05-01 14:03:23 -Failed to handle request [GET http://localhost:8080/blog/open/list?type=article&limit=10&offset=0]: Response status 404
+2018-05-01 14:03:28 -Failed to handle request [GET http://localhost:8080/blog/open/list?type=article&limit=10&offset=0]: Response status 404
+2018-05-01 14:03:28 -Failed to handle request [GET http://localhost:8080/css/bootstrap.min.css.map]: Response status 404
+2018-05-01 14:05:18 -Failed to handle request [GET http://localhost:8080/css/bootstrap.min.css.map]: Response status 404
+2018-05-01 14:05:23 -Failed to handle request [GET http://localhost:8080/blog/open/list?type=article&limit=10&offset=0]: Response status 404
+2018-05-01 14:05:23 -Failed to handle request [GET http://localhost:8080/css/bootstrap.min.css.map]: Response status 404
+2018-05-01 14:36:26 -Closing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6ab778a: startup date [Tue May 01 14:03:04 CST 2018]; root of context hierarchy
+2018-05-01 14:36:26 -Unregistering JMX-exposed beans on shutdown
+2018-05-01 14:36:26 -Stopped HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:40:33 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6237 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-01 14:40:33 -The following profiles are active: dev
+2018-05-01 14:40:34 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@31f9b85e: startup date [Tue May 01 14:40:34 CST 2018]; root of context hierarchy
+2018-05-01 14:40:36 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-05-01 14:40:37 -Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.example.firstapp.blog.controller.BlogController.blog()
+2018-05-01 14:40:37 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.example.firstapp.common.utils.PageUtils com.example.firstapp.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, ?>)
+2018-05-01 14:40:37 -Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.firstapp.controller.UserController.index()
+2018-05-01 14:40:37 -Mapped "{[/get],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.getUser(int)
+2018-05-01 14:40:37 -Mapped "{[/create],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.saveUser(java.lang.String)
+2018-05-01 14:40:37 -Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.example.firstapp.system.config.LoginController.welcome()
+2018-05-01 14:40:37 -Mapped (GET && /person/find/all) -> com.example.firstapp.config.RouterFunctionConfiguration$personFindAll$1@61f2c3f0
+2018-05-01 14:40:37 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:40:37 -Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:40:37 -Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@31f9b85e: startup date [Tue May 01 14:40:34 CST 2018]; root of context hierarchy
+2018-05-01 14:40:38 -Registering beans for JMX exposure on startup
+2018-05-01 14:40:38 -Started HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:40:38 -Netty started on port(s): 8080
+2018-05-01 14:40:38 -Started FirstAppApplicationKt in 6.392 seconds (JVM running for 7.318)
+2018-05-01 14:40:46 -Failed to handle request [GET http://localhost:8080/blog/open/list?type=article&limit=10&offset=0]
+kotlin.KotlinNullPointerException: null
+	at com.example.firstapp.blog.service.impl.ContentServiceImpl.list(ContentServiceImpl.kt:29)
+	at com.example.firstapp.blog.controller.BlogController.opentList(BlogController.kt:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:243)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:138)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:118)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1073)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:241)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:323)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:198)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:1630)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:138)
+	at reactor.core.publisher.MonoZip$ZipInner.onSubscribe(MonoZip.java:312)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onSubscribe(FluxPeekFuseable.java:172)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3080)
+	at reactor.core.publisher.MonoZip.subscribe(MonoZip.java:128)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:148)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:76)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:271)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:803)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:115)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:1630)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:156)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:1444)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:1318)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:90)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.MonoMapFuseable.subscribe(MonoMapFuseable.java:59)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3080)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:418)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:210)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:128)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:61)
+	at reactor.core.publisher.FluxConcatMap.subscribe(FluxConcatMap.java:121)
+	at reactor.core.publisher.MonoNext.subscribe(MonoNext.java:40)
+	at reactor.core.publisher.MonoSwitchIfEmpty.subscribe(MonoSwitchIfEmpty.java:44)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3080)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:167)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:70)
+	at reactor.core.publisher.MonoPeekTerminal.subscribe(MonoPeekTerminal.java:61)
+	at reactor.ipc.netty.channel.ChannelOperations.applyHandler(ChannelOperations.java:381)
+	at reactor.ipc.netty.http.server.HttpServerOperations.onHandlerStart(HttpServerOperations.java:397)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-01 14:40:46 -Failed to handle request [GET http://localhost:8080/css/bootstrap.min.css.map]: Response status 404
+2018-05-01 14:41:29 -Closing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@31f9b85e: startup date [Tue May 01 14:40:34 CST 2018]; root of context hierarchy
+2018-05-01 14:41:29 -Unregistering JMX-exposed beans on shutdown
+2018-05-01 14:41:29 -Stopped HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:41:35 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6240 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-01 14:41:35 -The following profiles are active: dev
+2018-05-01 14:41:35 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@54d18072: startup date [Tue May 01 14:41:35 CST 2018]; root of context hierarchy
+2018-05-01 14:41:38 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-05-01 14:41:38 -Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.example.firstapp.blog.controller.BlogController.blog()
+2018-05-01 14:41:38 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.example.firstapp.common.utils.PageUtils com.example.firstapp.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, ?>)
+2018-05-01 14:41:38 -Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.firstapp.controller.UserController.index()
+2018-05-01 14:41:38 -Mapped "{[/get],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.getUser(int)
+2018-05-01 14:41:38 -Mapped "{[/create],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.saveUser(java.lang.String)
+2018-05-01 14:41:38 -Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.example.firstapp.system.config.LoginController.welcome()
+2018-05-01 14:41:38 -Mapped (GET && /person/find/all) -> com.example.firstapp.config.RouterFunctionConfiguration$personFindAll$1@7d3c09ec
+2018-05-01 14:41:38 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:41:38 -Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:41:39 -Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@54d18072: startup date [Tue May 01 14:41:35 CST 2018]; root of context hierarchy
+2018-05-01 14:41:39 -Registering beans for JMX exposure on startup
+2018-05-01 14:41:40 -Started HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:41:40 -Netty started on port(s): 8080
+2018-05-01 14:41:40 -Started FirstAppApplicationKt in 6.306 seconds (JVM running for 8.181)
+2018-05-01 14:42:18 -Failed to handle request [GET http://localhost:8080/css/bootstrap.min.css.map]: Response status 404
+2018-05-01 14:42:18 -Failed to handle request [GET http://localhost:8080/blog/open/list?type=article&limit=10&offset=0]
+kotlin.KotlinNullPointerException: null
+	at com.example.firstapp.blog.service.impl.ContentServiceImpl.list(ContentServiceImpl.kt:29)
+	at com.example.firstapp.blog.controller.BlogController.opentList(BlogController.kt:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:243)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:138)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:118)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1073)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:241)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:323)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:198)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:1630)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:138)
+	at reactor.core.publisher.MonoZip$ZipInner.onSubscribe(MonoZip.java:312)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onSubscribe(FluxPeekFuseable.java:172)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3080)
+	at reactor.core.publisher.MonoZip.subscribe(MonoZip.java:128)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:148)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:76)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:271)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:803)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:115)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:1630)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:156)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:1444)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:1318)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:90)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.MonoMapFuseable.subscribe(MonoMapFuseable.java:59)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3080)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:418)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:210)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:128)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:61)
+	at reactor.core.publisher.FluxConcatMap.subscribe(FluxConcatMap.java:121)
+	at reactor.core.publisher.MonoNext.subscribe(MonoNext.java:40)
+	at reactor.core.publisher.MonoSwitchIfEmpty.subscribe(MonoSwitchIfEmpty.java:44)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3080)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:167)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:70)
+	at reactor.core.publisher.MonoPeekTerminal.subscribe(MonoPeekTerminal.java:61)
+	at reactor.ipc.netty.channel.ChannelOperations.applyHandler(ChannelOperations.java:381)
+	at reactor.ipc.netty.http.server.HttpServerOperations.onHandlerStart(HttpServerOperations.java:397)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-01 14:42:46 -Closing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@54d18072: startup date [Tue May 01 14:41:35 CST 2018]; root of context hierarchy
+2018-05-01 14:42:46 -Unregistering JMX-exposed beans on shutdown
+2018-05-01 14:42:46 -Stopped HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:44:45 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6264 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-01 14:44:45 -The following profiles are active: dev
+2018-05-01 14:44:45 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@3a12c404: startup date [Tue May 01 14:44:45 CST 2018]; root of context hierarchy
+2018-05-01 14:44:48 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-05-01 14:44:48 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.example.firstapp.common.utils.PageUtils com.example.firstapp.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, ?>)
+2018-05-01 14:44:48 -Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.example.firstapp.blog.controller.BlogController.blog()
+2018-05-01 14:44:48 -Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.firstapp.controller.UserController.index()
+2018-05-01 14:44:48 -Mapped "{[/get],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.getUser(int)
+2018-05-01 14:44:48 -Mapped "{[/create],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.saveUser(java.lang.String)
+2018-05-01 14:44:48 -Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.example.firstapp.system.config.LoginController.welcome()
+2018-05-01 14:44:48 -Mapped (GET && /person/find/all) -> com.example.firstapp.config.RouterFunctionConfiguration$personFindAll$1@100c8b75
+2018-05-01 14:44:48 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:44:48 -Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:44:49 -Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@3a12c404: startup date [Tue May 01 14:44:45 CST 2018]; root of context hierarchy
+2018-05-01 14:44:50 -Registering beans for JMX exposure on startup
+2018-05-01 14:44:50 -Started HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:44:50 -Netty started on port(s): 8080
+2018-05-01 14:44:50 -Started FirstAppApplicationKt in 6.978 seconds (JVM running for 8.74)
+2018-05-01 14:44:52 -Closing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@3a12c404: startup date [Tue May 01 14:44:45 CST 2018]; root of context hierarchy
+2018-05-01 14:44:52 -Unregistering JMX-exposed beans on shutdown
+2018-05-01 14:44:52 -Stopped HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:47:14 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6273 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-01 14:47:14 -The following profiles are active: dev
+2018-05-01 14:47:14 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@41dd05a: startup date [Tue May 01 14:47:14 CST 2018]; root of context hierarchy
+2018-05-01 14:47:17 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-05-01 14:47:17 -Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.example.firstapp.blog.controller.BlogController.blog()
+2018-05-01 14:47:17 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.example.firstapp.common.utils.PageUtils com.example.firstapp.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, ?>)
+2018-05-01 14:47:17 -Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.firstapp.controller.UserController.index()
+2018-05-01 14:47:17 -Mapped "{[/get],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.getUser(int)
+2018-05-01 14:47:17 -Mapped "{[/create],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.saveUser(java.lang.String)
+2018-05-01 14:47:17 -Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.example.firstapp.system.config.LoginController.welcome()
+2018-05-01 14:47:17 -Mapped (GET && /person/find/all) -> com.example.firstapp.config.RouterFunctionConfiguration$personFindAll$1@5484117b
+2018-05-01 14:47:17 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:47:17 -Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:47:17 -Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@41dd05a: startup date [Tue May 01 14:47:14 CST 2018]; root of context hierarchy
+2018-05-01 14:47:18 -Registering beans for JMX exposure on startup
+2018-05-01 14:47:19 -Started HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:47:19 -Netty started on port(s): 8080
+2018-05-01 14:47:19 -Started FirstAppApplicationKt in 6.71 seconds (JVM running for 8.127)
+2018-05-01 14:47:49 -Failed to handle request [GET http://localhost:8080/css/bootstrap.min.css.map]: Response status 404
+2018-05-01 14:47:49 -Failed to handle request [GET http://localhost:8080/blog/open/list?type=article&limit=10&offset=0]
+kotlin.KotlinNullPointerException: null
+	at com.example.firstapp.blog.service.impl.ContentServiceImpl.list(ContentServiceImpl.kt:29)
+	at com.example.firstapp.blog.controller.BlogController.opentList(BlogController.kt:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:243)
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:138)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:118)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1073)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:241)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:323)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onNext(FluxPeekFuseable.java:198)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:1630)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:138)
+	at reactor.core.publisher.MonoZip$ZipInner.onSubscribe(MonoZip.java:312)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onSubscribe(FluxPeekFuseable.java:172)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3080)
+	at reactor.core.publisher.MonoZip.subscribe(MonoZip.java:128)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:148)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:76)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:271)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:803)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:115)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:1630)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:156)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:1444)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:1318)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:90)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.MonoMapFuseable.subscribe(MonoMapFuseable.java:59)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3080)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:418)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:210)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:128)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:61)
+	at reactor.core.publisher.FluxConcatMap.subscribe(FluxConcatMap.java:121)
+	at reactor.core.publisher.MonoNext.subscribe(MonoNext.java:40)
+	at reactor.core.publisher.MonoSwitchIfEmpty.subscribe(MonoSwitchIfEmpty.java:44)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3080)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:167)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:70)
+	at reactor.core.publisher.MonoPeekTerminal.subscribe(MonoPeekTerminal.java:61)
+	at reactor.ipc.netty.channel.ChannelOperations.applyHandler(ChannelOperations.java:381)
+	at reactor.ipc.netty.http.server.HttpServerOperations.onHandlerStart(HttpServerOperations.java:397)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at java.lang.Thread.run(Thread.java:748)
+2018-05-01 14:53:29 -Closing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@41dd05a: startup date [Tue May 01 14:47:14 CST 2018]; root of context hierarchy
+2018-05-01 14:53:29 -Unregistering JMX-exposed beans on shutdown
+2018-05-01 14:53:29 -Stopped HttpServer on /0:0:0:0:0:0:0:0:8080
+2018-05-01 14:56:25 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6293 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-01 14:56:25 -The following profiles are active: dev
+2018-05-01 14:56:25 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6c45ee6e: startup date [Tue May 01 14:56:25 CST 2018]; root of context hierarchy
+2018-05-01 14:56:27 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'servletComponentRegisteringPostProcessor': Bean instantiation via constructor failed; nested exception is java.lang.NoClassDefFoundError: javax/servlet/annotation/WebServlet
+2018-05-01 14:56:27 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-01 14:56:27 -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'servletComponentRegisteringPostProcessor': Bean instantiation via constructor failed; nested exception is java.lang.NoClassDefFoundError: javax/servlet/annotation/WebServlet
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:278)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1270)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:177)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:61)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.example.firstapp.FirstAppApplicationKt.main(FirstAppApplication.kt:26)
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/annotation/WebServlet
+	at org.springframework.boot.web.servlet.WebServletHandler.<init>(WebServletHandler.java:39)
+	at org.springframework.boot.web.servlet.ServletComponentRegisteringPostProcessor.<clinit>(ServletComponentRegisteringPostProcessor.java:50)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:170)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:271)
+	... 18 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.servlet.annotation.WebServlet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 common frames omitted
+2018-05-01 14:57:07 -Starting FirstAppApplicationKt on zhangtaideMacBook-Pro.local with PID 6298 (/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes started by zhangtai in /Users/zhangtai/Documents/work_github/kotlin_first_webapps)
+2018-05-01 14:57:07 -The following profiles are active: dev
+2018-05-01 14:57:07 -Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6d9f7a80: startup date [Tue May 01 14:57:07 CST 2018]; root of context hierarchy
+2018-05-01 14:57:10 -[THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-05-01 14:57:11 -Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.example.firstapp.blog.controller.BlogController.blog()
+2018-05-01 14:57:11 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.example.firstapp.common.utils.PageUtils com.example.firstapp.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, ?>)
+2018-05-01 14:57:11 -Mapped "{[/],methods=[GET]}" onto public java.lang.String com.example.firstapp.controller.UserController.index()
+2018-05-01 14:57:11 -Mapped "{[/create],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.saveUser(java.lang.String)
+2018-05-01 14:57:11 -Mapped "{[/get],methods=[GET]}" onto public com.example.firstapp.domain.User com.example.firstapp.controller.UserController.getUser(int)
+2018-05-01 14:57:11 -Mapped "{[/ || ],methods=[GET]}" onto public java.lang.String com.example.firstapp.system.config.LoginController.welcome()
+2018-05-01 14:57:11 -Mapped (GET && /person/find/all) -> com.example.firstapp.config.RouterFunctionConfiguration$personFindAll$1@77865933
+2018-05-01 14:57:11 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:57:11 -Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-05-01 14:57:11 -Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6d9f7a80: startup date [Tue May 01 14:57:07 CST 2018]; root of context hierarchy
+2018-05-01 14:57:12 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogController': Unsatisfied dependency expressed through field 'bContentService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contentServiceImpl': Unsatisfied dependency expressed through field 'bContentMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contentDao' defined in file [/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes/com/example/firstapp/blog/dao/ContentDao.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+2018-05-01 14:57:12 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-01 14:57:12 -Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogController': Unsatisfied dependency expressed through field 'bContentService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contentServiceImpl': Unsatisfied dependency expressed through field 'bContentMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contentDao' defined in file [/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes/com/example/firstapp/blog/dao/ContentDao.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:61)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.example.firstapp.FirstAppApplicationKt.main(FirstAppApplication.kt:24)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contentServiceImpl': Unsatisfied dependency expressed through field 'bContentMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contentDao' defined in file [/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes/com/example/firstapp/blog/dao/ContentDao.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'contentDao' defined in file [/Users/zhangtai/Documents/work_github/kotlin_first_webapps/target/classes/com/example/firstapp/blog/dao/ContentDao.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.util.Assert.notNull(Assert.java:193)
+	at org.mybatis.spring.support.SqlSessionDaoSupport.checkDaoConfig(SqlSessionDaoSupport.java:74)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:73)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1761)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
+	... 42 common frames omitted
