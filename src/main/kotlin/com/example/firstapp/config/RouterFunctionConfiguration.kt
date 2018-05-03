@@ -1,5 +1,8 @@
 package com.example.firstapp.config
 
+import com.example.firstapp.blog.service.impl.ContentService
+import com.example.firstapp.common.utils.PageUtils
+import com.example.firstapp.common.utils.Query
 import com.example.firstapp.domain.User
 import com.example.firstapp.repository.UserRepository
 import org.springframework.context.annotation.Bean
@@ -29,6 +32,28 @@ class RouterFunctionConfiguration {
             var respone: Mono<ServerResponse>? = null;
             var userFlux: Flux<User> = Flux.fromIterable(all);
              ServerResponse.ok().body(userFlux, User::class.java);
+        });
+
+    }
+
+    @Bean
+    fun opentList(bContentService: ContentService): RouterFunction<ServerResponse> {
+        return RouterFunctions.route( RequestPredicates.GET("/blog/open/list2"),
+                HandlerFunction {
+
+                    var type = it.queryParam("type");
+                    var limit = it.queryParam("limit");
+                    var offset = it.queryParam("offset");
+                    var map = HashMap<String,String>();
+                    map.put("type", type.get())
+                    map.put("limit",limit.get())
+                    map.put("offset",offset.get())
+                    val query = Query(map)
+                    val bContentList = bContentService?.list(query)
+                    val total = bContentService?.count(query)
+                    var pageUtils = PageUtils(bContentList, total!!)
+                    var respone: Mono<PageUtils> = Mono.justOrEmpty(pageUtils);
+                    ServerResponse.ok().body(respone, PageUtils::class.java);
         });
 
     }
