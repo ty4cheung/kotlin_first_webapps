@@ -12,6 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired
 import com.example.firstapp.common.utils.DateUtils
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.PathVariable
+import com.example.firstapp.blog.domain.ContentDO
+import java.util.HashMap
+
+
 
 @RequestMapping("/blog")
 @Controller
@@ -38,6 +42,18 @@ class BlogController {
         val bContentDO = bContentService!!.get(cid)
         model.addAttribute("bContent", bContentDO)
         model.addAttribute("gtmModified", DateUtils.format(bContentDO.gtmModified!!))
+        return "blog/index/post"
+    }
+
+    @GetMapping("/open/page/{categories}")
+    fun about(@PathVariable("categories") categories: String, model: Model): String {
+        val map = HashMap<String, Any>(16)
+        map["categories"] = categories
+        var bContentDO: ContentDO? = null
+        if (bContentService?.list(map)!!.size > 0) {
+            bContentDO = bContentService!!.list(map)[0]
+        }
+        model.addAttribute("bContent", bContentDO!!)
         return "blog/index/post"
     }
 }
