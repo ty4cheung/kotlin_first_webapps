@@ -1,12 +1,16 @@
 package com.example.firstapp.system.shiro;
 
+import com.example.firstapp.common.config.ApplicationContextRegister;
 import com.example.firstapp.common.utils.ShiroUtils;
+import com.example.firstapp.system.dao.UserDao;
 import com.example.firstapp.system.domain.UserDO;
+import com.example.firstapp.system.service.MenuService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,18 +19,18 @@ import java.util.Set;
 import static com.example.firstapp.common.utils.ShiroUtils.*;
 
 public class UserRealm extends AuthorizingRealm {
-/*	@Autowired
+    @Autowired
 	UserDao userMapper;
 	@Autowired
-	MenuService menuService;*/
+	MenuService menuService;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection arg0) {
         Long userId = ShiroUtils.getUserId();
         MenuService menuService = ApplicationContextRegister.getBean(MenuService.class);
-//        Set<String> perms = menuService.listPerms(userId);
-//        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-//        info.setStringPermissions(perms);
+        Set<String> perms = menuService.listPerms(userId);
+        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+        info.setStringPermissions(perms);
         return info;
     }
 

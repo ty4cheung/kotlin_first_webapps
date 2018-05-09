@@ -63,7 +63,7 @@ class RedisCache<K, V>
             val preKey = this.keyPrefix + key
             return preKey.toByteArray()
         } else {
-            return SerializeUtils.serialize(key)
+            return SerializeUtils.serialize(key as ByteArray)!!
         }
     }
 
@@ -74,8 +74,8 @@ class RedisCache<K, V>
             if (key == null) {
                 return null
             } else {
-                val rawValue = cache.get(getByteKey(key))
-                return SerializeUtils.deserialize(rawValue)
+                val rawValue = cache!!.get(getByteKey(key))
+                return SerializeUtils.deserialize(rawValue) as V?
             }
         } catch (t: Throwable) {
             throw CacheException(t)
@@ -87,7 +87,7 @@ class RedisCache<K, V>
     override fun put(key: K, value: V): V {
         logger.debug("根据key从存储 key [$key]")
         try {
-            cache.set(getByteKey(key), SerializeUtils.serialize(value))
+            cache?.set(getByteKey(key), SerializeUtils.serialize(value)!!)
             return value
         } catch (t: Throwable) {
             throw CacheException(t)
@@ -100,7 +100,7 @@ class RedisCache<K, V>
         logger.debug("从redis中删除 key [$key]")
         try {
             val previous = get(key)
-            cache.del(getByteKey(key))
+            cache?.del(getByteKey(key))
             return previous
         } catch (t: Throwable) {
             throw CacheException(t)
@@ -112,7 +112,7 @@ class RedisCache<K, V>
     override fun clear() {
         logger.debug("从redis中删除所有元素")
         try {
-            cache.flushDB()
+            cache?.flushDB()
         } catch (t: Throwable) {
             throw CacheException(t)
         }
@@ -121,8 +121,8 @@ class RedisCache<K, V>
 
     override fun size(): Int {
         try {
-            val longSize = Long(cache.dbSize())
-            return longSize.toInt()
+            val longSize = cache?.dbSize()
+            return longSize?.toInt()!!
         } catch (t: Throwable) {
             throw CacheException(t)
         }
@@ -131,12 +131,12 @@ class RedisCache<K, V>
 
     override fun keys(): Set<K> {
         try {
-            val keys = cache.keys(this.keyPrefix + "*")
+            val keys = cache?.keys(this.keyPrefix + "*")
             if (CollectionUtils.isEmpty(keys)) {
                 return emptySet()
             } else {
                 val newKeys = HashSet<K>()
-                for (key in keys) {
+                for (key in keys!!) {
                     newKeys.add(key as K)
                 }
                 return newKeys
@@ -149,10 +149,10 @@ class RedisCache<K, V>
 
     override fun values(): Collection<V> {
         try {
-            val keys = cache.keys(this.keyPrefix + "*")
+            val keys = cache?.keys(this.keyPrefix + "*")
             if (!CollectionUtils.isEmpty(keys)) {
-                val values = ArrayList<V>(keys.size)
-                for (key in keys) {
+                val values = ArrayList<V>(keys?.size!!)
+                for (key in keys!!) {
                     val value = get(key as K)
                     if (value != null) {
                         values.add(value)

@@ -6,22 +6,22 @@ import redis.clients.jedis.Jedis
 import redis.clients.jedis.JedisPool
 import redis.clients.jedis.JedisPoolConfig
 
-object RedisManager {
+class RedisManager {
 
     @Value("\${spring.redis.host}")
-    val host = "127.0.0.1";
+    var host = "127.0.0.1";
 
     @Value("\${spring.redis.port}")
-    val port = 6379;
+    var port = 6379;
     // 0 - never expire
-    val expire = 0;
+    var expire = 0;
 
     //timeout for jedis try to connect to redis server, not expire time! In milliseconds
     @Value("\${spring.redis.timeout}")
-   val timeout = 0;
+   var timeout = 0;
 
     @Value("\${spring.redis.password}")
-    val password = "";
+    var password = "";
 
    var jedisPool =  JedisPool() ;
 

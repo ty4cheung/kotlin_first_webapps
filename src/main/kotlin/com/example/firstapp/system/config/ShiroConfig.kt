@@ -2,7 +2,10 @@ package com.bootdo.system.config
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect
 import com.example.firstapp.common.config.Constant
+import com.example.firstapp.common.redis.shiro.RedisCacheManager
 import com.example.firstapp.common.redis.shiro.RedisManager
+import com.example.firstapp.common.redis.shiro.RedisSessionDAO
+import com.example.firstapp.system.config.BDSessionListener
 import com.example.firstapp.system.shiro.UserRealm
 import org.apache.shiro.cache.ehcache.EhCacheManager
 import org.apache.shiro.mgt.SecurityManager
@@ -115,12 +118,12 @@ class ShiroConfig {
      */
     @Bean
     fun redisManager(): RedisManager {
-        val redisManager = RedisManager()
-        redisManager.setHost(host)
-        redisManager.setPort(port)
-        redisManager.setExpire(1800)// 配置缓存过期时间
+        var redisManager = RedisManager()
+        redisManager.host = this.host!!
+        redisManager.port = this.port
+        redisManager.expire = (1800)// 配置缓存过期时间
         //redisManager.setTimeout(1800);
-        redisManager.setPassword(password)
+        redisManager.password = this.password!!
         return redisManager
     }
 
@@ -143,7 +146,7 @@ class ShiroConfig {
     @Bean
     fun redisSessionDAO(): RedisSessionDAO {
         val redisSessionDAO = RedisSessionDAO()
-        redisSessionDAO.setRedisManager(redisManager())
+        redisSessionDAO.redisManager = this.redisManager()
         return redisSessionDAO
     }
 
