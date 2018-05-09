@@ -1,4 +1,4 @@
-// (function($) {
+    // (function($) {
 //     // 首先备份下jquery的ajax方法
 //     var _ajax = $.ajax;
 //

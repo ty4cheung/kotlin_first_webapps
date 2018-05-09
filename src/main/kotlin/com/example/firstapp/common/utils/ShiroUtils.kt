@@ -21,7 +21,7 @@ object ShiroUtils {
         val `object` = getSubjct().getPrincipal()
         return `object` as UserDO
     }
-
+    @JvmStatic
     fun getUserId(): Long? {
         return getUser().userId
     }
