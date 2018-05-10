@@ -1,11 +1,9 @@
 package com.example.firstapp.system.domain
 
-import lombok.Data
 import java.io.Serializable
 import org.springframework.format.annotation.DateTimeFormat
 import java.util.*
 
-@Data
 class UserDO : Serializable {
 
     companion object {

@@ -5,6 +5,10 @@ server:
 #        min-spare-threads: 30
   port: 8080
 #    uri-encoding: utf-8
+wiki:
+  file_extension: md
+  path: C:/Users/piggs/develop/Github/wiki-git
+  pageSize: 10
 security:
   basic:
     enabled: false
@@ -23,7 +27,22 @@ spring:
       max-request-size: 30Mb
   devtools:
     restart:
-      enabled: true    
+      enabled: true
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    # 连接超时时间（毫秒）
+    timeout: 10000
+    pool:
+    # 连接池中的最大空闲连接
+    max-idle: 8
+    # 连接池中的最小空闲连接
+    min-idle: 10
+    # 连接池最大连接数（使用负值表示没有限制）
+    max-active: 100
+    # 连接池最大阻塞等待时间（使用负值表示没有限制）
+    max-wait: -1
 mybatis: 
   configuration:
     map-underscore-to-camel-case: true

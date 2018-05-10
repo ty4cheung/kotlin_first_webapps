@@ -7,17 +7,19 @@ import com.example.firstapp.common.utils.ShiroUtils
 import org.apache.shiro.SecurityUtils
 import org.apache.shiro.authc.AuthenticationException
 import org.apache.shiro.authc.UsernamePasswordToken
+import org.springframework.http.HttpRequest
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseBody
+import reactor.ipc.netty.http.server.HttpServerRequest
 import java.security.Security
 
 @Controller
 class LoginController : BaseController() {
 
-    @GetMapping("/","")
+    @GetMapping(value = ["/",""])
     fun welcome() : String {
         return "redirect:/blog";
     }
@@ -38,10 +40,10 @@ class LoginController : BaseController() {
         return "main"
     }
 
-    @PostMapping("login")
+    @PostMapping("/login")
     @ResponseBody
-    fun ajsxLogin(username:String, password:String): R {
-        val encrypt = MD5Utils.encrypt(username, password);
+    fun login(@RequestParam username:String?, @RequestParam password:String?): R {
+        val encrypt = MD5Utils.encrypt(username!!, password!!);
         val token:UsernamePasswordToken = UsernamePasswordToken(username,encrypt)
         val subject = SecurityUtils.getSubject()
         try {

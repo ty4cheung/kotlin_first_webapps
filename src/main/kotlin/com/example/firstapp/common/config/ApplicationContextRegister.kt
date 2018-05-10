@@ -1,15 +1,15 @@
 package com.example.firstapp.common.config
 
-import jdk.nashorn.internal.runtime.regexp.joni.Config.log
-import lombok.extern.slf4j.Slf4j
+import org.slf4j.LoggerFactory
 import org.springframework.context.ApplicationContext
 import org.springframework.context.ApplicationContextAware
 import org.springframework.stereotype.Component
 
 @Component
-@Slf4j
 class ApplicationContextRegister: ApplicationContextAware {
+    private val logger = LoggerFactory.getLogger(ApplicationContextRegister::class.java)
     override fun setApplicationContext(applicationContext: ApplicationContext) {
+        logger.debug("ApplicationContext registed-->{}", applicationContext)
         APPLICATION_CONTEXT = applicationContext
     }
 

@@ -1,7 +1,11 @@
 package com.example.firstapp
 
+import com.example.firstapp.system.config.ShiroConfig
+import com.example.firstapp.system.config.TestConfig
 import org.mybatis.spring.annotation.MapperScan
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
 import org.springframework.transaction.annotation.EnableTransactionManagement
 
@@ -9,6 +13,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement
 @MapperScan("com.example.firstapp.*.dao")
 @SpringBootApplication
 class FirstAppApplication
+
+@Autowired
+var testConfig: TestConfig? = null
 
 fun main(args: Array<String>) {
     runApplication<FirstAppApplication>(*args)
@@ -19,4 +26,6 @@ fun main(args: Array<String>) {
             "  |  __'. / .'`\\ \\/ .'`\\ \\| |   | |  | |/ .'`\\ \\ \n" +
             " _| |__) || \\__. || \\__. || |, _| |_.' /| \\__. | \n" +
             "|_______/  '.__.'  '.__.' \\__/|______.'  '.__.'  ")
+
+    print(testConfig)
 }

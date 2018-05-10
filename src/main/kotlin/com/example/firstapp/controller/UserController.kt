@@ -19,6 +19,7 @@ class UserController {
     @GetMapping("/create")
     @ResponseBody
     fun saveUser(@RequestParam name:String) :User?{
+
         var newUser = User();
         newUser.name = name;
         newUser.age = Random().nextInt();

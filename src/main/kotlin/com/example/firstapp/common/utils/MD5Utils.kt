@@ -1,10 +1,8 @@
 package com.example.firstapp.common.utils
 
-import lombok.extern.slf4j.Slf4j
 import org.apache.shiro.crypto.hash.SimpleHash
 import org.apache.shiro.util.ByteSource
 
-@Slf4j
 object MD5Utils{
     private val SALT = "1qazxsw2"
 

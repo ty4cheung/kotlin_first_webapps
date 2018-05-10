@@ -1,12 +1,12 @@
-package com.bootdo.system.config
+package com.example.firstapp.system.config
 
 import at.pollux.thymeleaf.shiro.dialect.ShiroDialect
 import com.example.firstapp.common.config.Constant
 import com.example.firstapp.common.redis.shiro.RedisCacheManager
 import com.example.firstapp.common.redis.shiro.RedisManager
 import com.example.firstapp.common.redis.shiro.RedisSessionDAO
-import com.example.firstapp.system.config.BDSessionListener
 import com.example.firstapp.system.shiro.UserRealm
+import org.apache.shiro.cache.CacheManager
 import org.apache.shiro.cache.ehcache.EhCacheManager
 import org.apache.shiro.mgt.SecurityManager
 import org.apache.shiro.session.SessionListener
@@ -18,6 +18,7 @@ import org.apache.shiro.spring.web.ShiroFilterFactoryBean
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager
 import org.springframework.beans.factory.annotation.Value
+import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
@@ -28,20 +29,23 @@ import java.util.LinkedHashMap
  * @author bootdo 1992lcg@163.com
  */
 @Configuration
-class ShiroConfig {
-    @Value("\${spring.redis.host}")
-    private val host: String? = null
-    @Value("\${spring.redis.password}")
-    private val password: String? = null
-    @Value("\${spring.redis.port}")
+class ShiroConfig(
+        @Value("\${spring.redis.host}") var host: String,
+        @Value("\${wiki.pageSize}") var defaultPageSize: Int
+) {
+
+     init {
+
+    }
+//    @Value("\${spring.redis.password}")
+    private val password: String = ""
+//    @Value("\${spring.redis.port}")
     private val port: Int = 0
-    @Value("\${spring.redis.timeout}")
+//    @Value("\${spring.redis.timeout}")
     private val timeout: Int = 0
-
-    @Value("\${cacheType}")
+//    @Value("\${cacheType}")
     private val cacheType: String? = null
-
-    @Value("\${server.session-timeout}")
+//    @Value("\${server.session-timeout}")
     private val tomcatTimeout: Int = 0
 
     /**
@@ -95,9 +99,8 @@ class ShiroConfig {
     }
 
     @Bean
-    internal fun userRealm(): UserRealm {
-        return UserRealm()
-    }
+    fun userRealm() = UserRealm()
+
 
     /**
      * 开启shiro aop注解支持.
@@ -119,7 +122,7 @@ class ShiroConfig {
     @Bean
     fun redisManager(): RedisManager {
         var redisManager = RedisManager()
-        redisManager.host = this.host!!
+        redisManager.host = this.host
         redisManager.port = this.port
         redisManager.expire = (1800)// 配置缓存过期时间
         //redisManager.setTimeout(1800);
@@ -174,17 +177,14 @@ class ShiroConfig {
     }
 
     @Bean
-    fun ehCacheManager(): EhCacheManager {
+    fun ehCacheManager(): CacheManager {
         val em = EhCacheManager()
         em.cacheManagerConfigFile = "classpath:config/ehcache.xml"
-        return em
+         return em;
     }
 
-    companion object {
+    @Bean
+    fun lifecycleBeanPostProcessor() = LifecycleBeanPostProcessor()
 
-        val lifecycleBeanPostProcessor: LifecycleBeanPostProcessor
-            @Bean
-            get() = LifecycleBeanPostProcessor()
-    }
 
 }

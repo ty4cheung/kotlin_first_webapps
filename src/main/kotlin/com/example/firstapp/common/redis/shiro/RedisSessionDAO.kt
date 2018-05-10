@@ -1,11 +1,9 @@
 package com.example.firstapp.common.redis.shiro
 
-import lombok.extern.slf4j.Slf4j
 import org.apache.shiro.session.Session
 import org.apache.shiro.session.mgt.eis.AbstractSessionDAO
 import java.io.Serializable
 
-@Slf4j
 class RedisSessionDAO : AbstractSessionDAO() {
     var redisManager: RedisManager? = null;
 
