@@ -34,9 +34,6 @@ class ShiroConfig(
         @Value("\${wiki.pageSize}") var defaultPageSize: Int
 ) {
 
-     init {
-
-    }
 //    @Value("\${spring.redis.password}")
     private val password: String = ""
 //    @Value("\${spring.redis.port}")
